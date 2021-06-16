@@ -1,3 +1,3 @@
-# Interactive Learning from Acitivity Description
+# Interactive Learning from Activity Description
 
 Code coming soon!

@@ -48,6 +48,8 @@ ILIAD is a interactive learning framework that enables training agents using onl
   3) `REGEX` only! initialize the student with unlabeled executions: `bash scripts/pretrain_iliad.sh`
   4) Train the student's with ILIAD/ADEL: `bash scripts/train_iliad.sh`
 
+- For each experiment, a log file will be saved to `experiments/$NAME/run.log` where `$NAME` is the name of the experiment specified in the YAML config file of the experiment (these config files are in the `configs` folder; you can view an experiment's .sh script to see what config file it is using).
+
 ### Citation
 
 ```

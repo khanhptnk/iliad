@@ -8,7 +8,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 ![](images/illustration.png)
 
-### Clone the repo
+### Clone Repo
 
 - Please use the `-recursive` flag when cloning: `git clone --recursive https://github.com/khanhptnk/iliad.git`
 

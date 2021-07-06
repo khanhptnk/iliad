@@ -2,7 +2,7 @@
 
 Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
-ILIAD/ADEL is a interactive learning framework that enables training agents using only <span style="color:#cc0000">language description feedback</span>.
+ILIAD/ADEL is a interactive learning framework that enables training agents using only <span style="color:red">language description feedback</span>.
 
 
 ![](images/illustration.png)

@@ -62,3 +62,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 }
 ```
 
+### Contact
+
+If you have questions, please contact Khanh at kxnguyen@umd.edu or nguyenxuankhanhm@gmail.com.
+

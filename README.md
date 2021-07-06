@@ -38,7 +38,7 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
 
 - Go to the NAV directory: `cd tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 
-- Train a baseline as: `bash scripts/train_$BASELINE` where `$BASELINE` is one of `['dagger', 'rl_bin', 'rl_cont']`.
+- Train a baseline as: `bash scripts/train_$BASELINE` where `$BASELINE` is one of `dagger`, `rl_bin`, `rl_cont`.
 
 - Train an ILIAD/ADEL agent:
 

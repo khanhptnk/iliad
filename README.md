@@ -39,7 +39,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 - Go to the NAV directory: `cd iliad/code/tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 
-- Train a baseline as: `bash scripts/train_$BASELINE.sh` where `$BASELINE` is one of `dagger`, `rl_bin`, `rl_cont`.
+- Train a baseline as: `bash scripts/train_$BASELINE.sh` where `$BASELINE` is one of `dagger`, `reinforce_binary`, `reinforce_continuous`.
 
 - Train an ILIAD/ADEL agent:
 
@@ -49,6 +49,8 @@ ILIAD is a interactive learning framework that enables training agents using onl
   4) Train the student's with ILIAD/ADEL: `bash scripts/train_iliad.sh`
 
 - For each experiment, a log file will be saved to `experiments/$NAME/run.log` where `$NAME` is the name of the experiment specified in the YAML config file of the experiment (these config files are in the `configs` folder; you can view an experiment's .sh script to see what config file it is using).
+
+- Evaluate an agent: `bash scripts/evaluate.sh $METHOD` where `$METHOD` is one of `iliad`, `dagger`, `reinforce_binary`, `reinforce_continuous`.
 
 ### Citation
 

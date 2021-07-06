@@ -14,7 +14,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 ### Download Data
 
-- Download and extract data: `cd data && bash download.sh`
+- Download and extract data: `cd data && bash download_data.sh`
 
 ### Setup Docker
 

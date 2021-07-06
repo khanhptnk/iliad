@@ -1,5 +1,10 @@
 # Interactive Learning from Activity Description
 
+Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
+
+ILIAD/ADEL is a interactive learning framework that enables training agents by only **verbally describing their activities
+**.
+
 ### Download Data
 
 - Download and extract data: `cd data && bash download.sh`
@@ -33,7 +38,18 @@ All commands must be run inside the Docker image
 
   1) Train the teacher's execution policy: `bash scripts/train_executor.sh`
   2) Train the teacher's describer: `bash scripts/train_describer.sh`
-  2.5) `REGEX` only: initialize the student with unlabeled executions: `bash scripts/pretrain_iliad.sh`
-  3) Train the student's with ILIAD/ADEL: `bash scripts/train_iliad.sh`
+  3) `REGEX` only: initialize the student with unlabeled executions: `bash scripts/pretrain_iliad.sh`
+  4) Train the student's with ILIAD/ADEL: `bash scripts/train_iliad.sh`
 
- 
+### Citation
+
+'''
+@inproceedings{nguyen2021iliad,
+  title={Interactive Learning from Activity Description},
+  author={Nguyen, Khanh and Misra, Dipendra and Schapire, Robert and Dud{\'\i}k, Miro and Shafto, Patrick},
+  booktitle={Proceedings of the 38th International Conference on Machine Learning},
+  year={2021},
+  url={https://arxiv.org/pdf/2102.07024.pdf}
+}
+'''
+

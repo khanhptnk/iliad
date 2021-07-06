@@ -1,8 +1,8 @@
-# Interactive Learning from Activity Description
+# Interactive Learning from Activity Description (ILIAD)
 
 Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
-<p>ILIAD/ADEL is a interactive learning framework that enables training agents using only <span style="color:red">language description feedback</span>.</p>
+ILIAD is a interactive learning framework that enables training agents using only <span style="color:red">language description feedback</span>.</p>
 
 ![](images/illustration.png)
 

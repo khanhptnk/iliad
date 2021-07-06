@@ -2,7 +2,11 @@
 
 Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
-ILIAD/ADEL is a interactive learning framework that enables training agents by only **verbally describing their activities**.
+ILIAD/ADEL is a interactive learning framework that enables training agents by only *verbally describing their activities*.
+
+### Clone the repo
+
+- Please use the `-recursive` flag when cloning: `git clone --recursive https://github.com/khanhptnk/iliad.git`
 
 ![](images/illustration.png)
 
@@ -39,7 +43,7 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
 
   1) Train the teacher's execution policy: `bash scripts/train_executor.sh`
   2) Train the teacher's describer: `bash scripts/train_describer.sh`
-  3) `REGEX` only: initialize the student with unlabeled executions: `bash scripts/pretrain_iliad.sh`
+  3) `REGEX` only! initialize the student with unlabeled executions: `bash scripts/pretrain_iliad.sh`
   4) Train the student's with ILIAD/ADEL: `bash scripts/train_iliad.sh`
 
 ### Citation

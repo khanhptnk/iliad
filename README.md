@@ -1,12 +1,11 @@
-# Interactive Learning from Activity Description
+# Interactive Learning from Activity Description (ILIAD)
 
 <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/>
 <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" />
 
 Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
-ILIAD/ADEL is a interactive learning framework that enables training agents by only *verbally describing their activities*.
-
+ILIAD is a interactive learning framework that enables training agents using only **language description feedback**.
 
 ![](images/illustration.png)
 
@@ -41,7 +40,7 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
 
 - Go to the NAV directory: `cd tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 
-- Train a baseline as: `bash scripts/train_$BASELINE` where `$BASELINE` is one of `['dagger', 'rl_bin', 'rl_cont']`.
+- Train a baseline as: `bash scripts/train_$BASELINE` where `$BASELINE` is one of `dagger`, `rl_bin`, `rl_cont`.
 
 - Train an ILIAD/ADEL agent:
 

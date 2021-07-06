@@ -24,7 +24,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 - Build Docker image: `bash scripts/build_docker.sh` (use `sudo` if needed)
 
-- Run Docker image: `bash scripts/run_docker.sh`
+- Run Docker image: `bash scripts/run_docker.sh`. If you successfully launch the image, the terminal will start with `#` instead of `$`.
 
 - **Inside the image**, build the Matterport3D simulator:
 

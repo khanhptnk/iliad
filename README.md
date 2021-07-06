@@ -43,6 +43,7 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
 ### Citation
 
 '''
+
 @inproceedings{nguyen2021iliad,
   title={Interactive Learning from Activity Description},
   author={Nguyen, Khanh and Misra, Dipendra and Schapire, Robert and Dud{\'\i}k, Miro and Shafto, Patrick},
@@ -50,5 +51,6 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
   year={2021},
   url={https://arxiv.org/pdf/2102.07024.pdf}
 }
+
 '''
 

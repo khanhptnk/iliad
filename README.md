@@ -26,7 +26,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 - Run Docker image: `bash scripts/run_docker.sh`
 
-- Build the Matterport3D simulator inside the image:
+- **Inside the image**, build the Matterport3D simulator:
 
 ```
 # cd iliad/code

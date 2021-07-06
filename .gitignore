@@ -1,0 +1,5 @@
+*experiments/*
+*/build/*
+*pyc
+*bak
+*swp

@@ -1,0 +1,32 @@
+name: nav_student_dagger
+task: 'nav'
+student:
+  name: DaggerStudent
+  model:
+    name: ExecutorTransformerSeq2SeqModel
+    hidden_size: 256
+    word_embed_size: 256
+    dropout_ratio: 0
+    img_feature_size: 2048
+    learning_rate: 0.0001
+    attention_heads: 8
+    num_layers: 1
+  max_timesteps: 10
+  max_instruction_length: 80
+teacher:
+  name: DaggerTeacher
+  success_radius: 3
+trainer:
+  name: DaggerTrainer
+  batch_size: 32
+  log_every: 50
+  max_iters: 25000
+  main_metric_name: 'score'
+world:
+  meta_name: MatterportWorldMeta
+  name: MatterportWorld
+  image_feature_file: 'ResNet-152-imagenet.tsv'
+  loc_embed_size: 128
+  room_embed_size: 300
+seed: 123
+device_id: 0

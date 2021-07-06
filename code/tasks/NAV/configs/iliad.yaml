@@ -1,0 +1,66 @@
+name: nav_student_iliad
+task: 'nav'
+student:
+  name: IliadStudent
+  model:
+    name: ExecutorTransformerSeq2SeqModel
+    hidden_size: 256
+    word_embed_size: 256
+    dropout_ratio: 0
+    img_feature_size: 2048
+    learning_rate: 0.0001
+    attention_heads: 8
+    num_layers: 1
+  max_timesteps: 10
+  max_instruction_length: 80
+executor:
+  name: Executor
+  model:
+    name: ExecutorTransformerSeq2SeqModel
+    hidden_size: 256
+    word_embed_size: 256
+    dropout_ratio: 0
+    img_feature_size: 2048
+    learning_rate: 0.0001
+    attention_heads: 8
+    num_layers: 1
+  max_timesteps: 10
+  max_instruction_length: 80
+describer:
+  name: Describer
+  model:
+    name: DescriberTransformerSeq2SeqModel
+    hidden_size: 256
+    word_embed_size: 256
+    dropout_ratio: 0
+    img_feature_size: 2048
+    learning_rate: 0.0001
+    attention_heads: 8
+    num_layers: 1
+  max_timesteps: 50
+  n_samples: 5
+teacher:
+  name: IliadTeacher
+  success_radius: 3
+trainer:
+  name: IliadTrainer
+  batch_size: 32
+  log_every: 50
+  log_rate: 10
+  max_iters: 25000
+  main_metric_name: 'score'
+  bc: 0
+  explore_prob: 1
+  unsup_weight: 
+    init: 0.5
+    rate: 1
+    min: 0
+    decay_every: 2000
+world:
+  meta_name: MatterportWorldMeta
+  name: MatterportWorld
+  image_feature_file: 'ResNet-152-imagenet.tsv'
+  loc_embed_size: 128
+  room_embed_size: 300
+seed: 123
+device_id: 0

@@ -1,0 +1,59 @@
+name: regex_student_iliad
+task: 'regex'
+describer:
+  name: Describer
+  model:
+    name: DescriberLSTMSeq2SeqModel
+    hidden_size: 512
+    src_time_embed_size: 8
+    tgt_time_embed_size: 32
+    src_embed_size: 32
+    tgt_embed_size: 128
+    dropout_ratio: .0
+    learning_rate: .001
+  max_timesteps: 40
+  n_samples: 10
+executor:                                                                       
+  name: Executor                                                                
+  model:                                                                        
+    name: ExecutorLSTMSeq2SeqModel                                              
+    hidden_size: 512                                                            
+    task_time_embed_size: 32                                                    
+    src_time_embed_size: 8                                                      
+    tgt_time_embed_size: 8                                                      
+    task_embed_size: 128                                                        
+    src_embed_size: 32                                                          
+    tgt_embed_size: 32                                                          
+    dropout_ratio: .0                                                           
+    learning_rate: .001   
+  max_timesteps: 40
+student:                                                                        
+  name: IliadStudent                                                        
+  model:                                                                        
+    name: StudentLSTMSeq2SeqModel                                                                                 
+    hidden_size: 512                                                            
+    task_time_embed_size: 32                                                    
+    src_time_embed_size: 8                                                      
+    tgt_time_embed_size: 8                                                      
+    task_embed_size: 128                                                        
+    src_embed_size: 32                                                          
+    tgt_embed_size: 32                                                          
+    dropout_ratio: .0                                                           
+    learning_rate: .001
+  max_timesteps: 40    
+teacher:
+  name: IliadTeacher
+trainer: 
+  batch_size: 32
+  name: IliadTrainer
+  max_iters: 30000
+  log_every: 50
+  explore_prob: 1
+  unsup_weight: 
+    init: 0.5
+    rate: 1
+    decay_every: 2000
+    min: 0
+seed: 123
+data_file: "corpus.json"
+device_id: 0

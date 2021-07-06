@@ -1,0 +1,36 @@
+name: regex_describer
+describer:
+  name: Describer
+  model:
+    name: DescriberLSTMSeq2SeqModel
+    hidden_size: 512
+    src_time_embed_size: 8
+    tgt_time_embed_size: 32
+    src_embed_size: 32
+    tgt_embed_size: 128
+    dropout_ratio: .0
+    learning_rate: .001
+  max_timesteps: 40
+  n_samples: 10
+executor:                                                                       
+  name: Executor                                                                
+  model:                                                                        
+    name: ExecutorLSTMSeq2SeqModel                                              
+    hidden_size: 512                                                            
+    task_time_embed_size: 32                                                    
+    src_time_embed_size: 8                                                      
+    tgt_time_embed_size: 8                                                      
+    task_embed_size: 128                                                        
+    src_embed_size: 32                                                          
+    tgt_embed_size: 32                                                          
+    dropout_ratio: .0                                                           
+    learning_rate: .001   
+  max_timesteps: 40
+trainer: 
+  batch_size: 256
+  name: DescriberTrainer
+  max_iters: 40000
+  log_every: 2000
+seed: 123
+data_file: "corpus.json"
+device_id: 0

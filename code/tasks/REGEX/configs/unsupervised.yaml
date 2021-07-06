@@ -1,0 +1,25 @@
+name: regex_student_unsupervised
+student:
+  name: SupervisedStudent
+  model:
+    name: StudentLSTMSeq2SeqModel
+    hidden_size: 512
+    task_time_embed_size: 32
+    src_time_embed_size: 8
+    tgt_time_embed_size: 8
+    task_embed_size: 128
+    src_embed_size: 32
+    tgt_embed_size: 32
+    dropout_ratio: .0
+    learning_rate: .001
+  max_timesteps: 40
+trainer: 
+  batch_size: 256
+  name: UnsupervisedTrainer
+  max_iters: 10000
+  log_every: 500
+seed: 123
+data_file: "corpus.json"
+limit_train_data: 0
+device_id: 0
+

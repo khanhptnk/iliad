@@ -2,7 +2,7 @@
 
 <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" />
 
-Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
+Implementation of experiments in [Interactive Learning from Activity Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
 ILIAD is a interactive learning framework that enables training agents using only **language description feedback**.
 

@@ -35,7 +35,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 ### Run experiments
 
-**All commands must be run inside the Docker image!**
+**All commands must be run inside the Docker image! (where the prompt starts with `#`)**
 
 - Go to the NAV directory: `cd iliad/code/tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 

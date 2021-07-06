@@ -2,8 +2,7 @@
 
 Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
-ILIAD/ADEL is a interactive learning framework that enables training agents by only **verbally describing their activities
-**.
+ILIAD/ADEL is a interactive learning framework that enables training agents by only **verbally describing their activities**.
 
 ### Download Data
 
@@ -28,7 +27,7 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
 
 ### Run experiments
 
-All commands must be run inside the Docker image
+**All commands must be run inside the Docker image!**
 
 - Go to the NAV directory: `cd tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 

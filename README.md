@@ -43,7 +43,7 @@ All commands must be run inside the Docker image
 
 ### Citation
 
-'''
+```
 @inproceedings{nguyen2021iliad,
   title={Interactive Learning from Activity Description},
   author={Nguyen, Khanh and Misra, Dipendra and Schapire, Robert and Dud{\'\i}k, Miro and Shafto, Patrick},
@@ -51,5 +51,5 @@ All commands must be run inside the Docker image
   year={2021},
   url={https://arxiv.org/pdf/2102.07024.pdf}
 }
-'''
+```
 

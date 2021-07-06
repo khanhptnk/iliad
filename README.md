@@ -2,7 +2,7 @@
 
 <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" />
 
-Implementation of experiments in [Interactive Learning from Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
+Implementation of experiments in [Interactive Learning from Activity Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
 ILIAD is a interactive learning framework that enables training agents using only **language description feedback**.
 
@@ -24,7 +24,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 - Build Docker image: `bash scripts/build_docker.sh` (use `sudo` if needed)
 
-- Run Docker image: `bash scripts/run_docker.sh`
+- Run Docker image: `bash scripts/run_docker.sh`. If you successfully launch the image, the terminal will start with `#` instead of `$`.
 
 - **Inside the image**, build the Matterport3D simulator:
 
@@ -35,7 +35,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 ### Run experiments
 
-**All commands must be run inside the Docker image!**
+**All commands in this section must be run inside the Docker image! (where the prompt starts with `#`)**
 
 - Go to the NAV directory: `cd iliad/code/tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 
@@ -61,4 +61,8 @@ ILIAD is a interactive learning framework that enables training agents using onl
   url={https://arxiv.org/pdf/2102.07024.pdf}
 }
 ```
+
+### Contact
+
+If you have questions, please contact Khanh at kxnguyen@umd.edu or nguyenxuankhanhm@gmail.com.
 

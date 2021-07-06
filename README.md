@@ -50,7 +50,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 - For each experiment, a log file will be saved to `experiments/$NAME/run.log` where `$NAME` is the name of the experiment specified in the YAML config file of the experiment (these config files are in the `configs` folder; you can view an experiment's .sh script to see what config file it is using).
 
-- Evaluate an agent: `bash scripts/evaluate.sh $METHOD` where `$METHOD` is one of `iliad`, `dagger`, `reinforce_binary`, `reinforce_continuous`.
+- Evaluate an agent: `bash scripts/eval.sh $METHOD` where `$METHOD` is one of `iliad`, `dagger`, `reinforce_binary`, `reinforce_continuous`.
 
 ### Citation
 

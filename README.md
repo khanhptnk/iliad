@@ -4,6 +4,8 @@ Implementation of experiments in [Interactive Learning from Description](https:/
 
 ILIAD/ADEL is a interactive learning framework that enables training agents by only **verbally describing their activities**.
 
+![](images/illustration.png)
+
 ### Download Data
 
 - Download and extract data: `cd data && bash download.sh`

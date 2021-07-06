@@ -37,7 +37,7 @@ ILIAD is a interactive learning framework that enables training agents using onl
 
 **All commands must be run inside the Docker image!**
 
-- Go to the NAV directory: `cd tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
+- Go to the NAV directory: `cd iliad/code/tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 
 - Train a baseline as: `bash scripts/train_$BASELINE` where `$BASELINE` is one of `dagger`, `rl_bin`, `rl_cont`.
 

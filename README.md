@@ -37,7 +37,7 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
 
   1) Train the teacher's execution policy: `bash scripts/train_executor.sh`
   2) Train the teacher's describer: `bash scripts/train_describer.sh`
-  3) `REGEX` only: initialize the student with unlabeled executions: `bash scripts/pretrain_iliad.sh`
+  3) `REGEX` only! initialize the student with unlabeled executions: `bash scripts/pretrain_iliad.sh`
   4) Train the student's with ILIAD/ADEL: `bash scripts/train_iliad.sh`
 
 ### Citation

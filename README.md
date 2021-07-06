@@ -27,7 +27,7 @@ ILIAD/ADEL is a interactive learning framework that enables training agents by o
 
 ### Run experiments
 
-All commands must be run inside the Docker image
+**All commands must be run inside the Docker image!**
 
 - Go to the NAV directory: `cd tasks/$TASK` where `$TASK` is either `NAV` or `REGEX`.
 

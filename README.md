@@ -4,6 +4,10 @@ Implementation of experiments in [Interactive Learning from Description](https:/
 
 ILIAD/ADEL is a interactive learning framework that enables training agents by only **verbally describing their activities**.
 
+### Clone the repo
+
+- Please use the `-recursive` flag when cloning: `git clone --recursive https://github.com/khanhptnk/iliad.git`
+
 ### Download Data
 
 - Download and extract data: `cd data && bash download.sh`

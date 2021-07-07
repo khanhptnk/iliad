@@ -48,7 +48,6 @@ class SupervisedStudent(object):
 
     def _index_and_pad(self, xs, vocab):
 
-        # Init instructed model
         encodings = []
         masks = []
         for x in xs:

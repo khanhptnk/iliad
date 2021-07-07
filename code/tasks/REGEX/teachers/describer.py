@@ -48,7 +48,6 @@ class Describer(object):
 
     def _index_and_pad(self, x, vocab):
 
-        # Init instructed model
         encodings = []
         masks = []
         for x in xs:

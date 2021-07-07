@@ -54,7 +54,6 @@ class Executor(object):
 
     def _index_and_pad(self, xs, vocab, reverse=True):
 
-        # Init instructed model
         encodings = []
         masks = []
         for x in xs:

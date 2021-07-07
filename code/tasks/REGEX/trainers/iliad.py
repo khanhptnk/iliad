@@ -282,13 +282,6 @@ class IliadTrainer(object):
                     train_info['data_idx'] = datasets['train'].idx
                     train_info['data_indices'] = datasets['train'].indices
 
-                    # Save with current iteration
-                    if self.config.trainer.save_every:
-                        current_iter = 'iter_%d' % train_info['i_iter']
-                        student.save(current_iter)
-                        self.save_train_info(current_iter, train_info)
-                        self.save_preds(current_iter, eval_preds)
-
                     # Save last model
                     student.save('last')
                     self.save_train_info('last', train_info)

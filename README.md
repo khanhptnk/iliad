@@ -4,7 +4,7 @@
 
 Implementation of experiments in [Interactive Learning from Activity Description](https://arxiv.org/pdf/2102.07024.pdf) (ICML 2021).
 
-ILIAD is a interactive learning framework that enables training agents using only **language description feedback**.
+ILIAD is an interactive learning framework that enables training agents using only **language description feedback**.
 
 ![](images/illustration.png)
 

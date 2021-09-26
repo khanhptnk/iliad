@@ -33,6 +33,13 @@ ILIAD is an interactive learning framework that enables training agents using on
 # bash scripts/build_simulator.sh
 ```
 
+and create an `experiments` directory:
+
+```
+# mkdir experiments
+```
+
+
 ### Run Experiments
 
 **All commands in this section must be run inside the Docker image! (where the prompt starts with `#`)**

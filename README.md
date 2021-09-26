@@ -33,10 +33,11 @@ ILIAD is an interactive learning framework that enables training agents using on
 # bash scripts/build_simulator.sh
 ```
 
-and create an `experiments` directory:
+and create `experiments` directories:
 
 ```
-# mkdir experiments
+# mkdir tasks/NAV/experiments
+# mkdir tasks/REGEX/experiments
 ```
 
 
